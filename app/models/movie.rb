@@ -2,6 +2,9 @@ require 'active_record'
 
 class Movie < ActiveRecord::Base
   #self.abstract_class = true
+  def self.ratings
+    ['G','PG', 'PG-13', 'R']
+  end
 end
 # starwars = Movie.create!(:title => 'Star Wars',
 # 	  :release_date => '25/4/1977', :rating => 'PG')
